@@ -1,0 +1,41 @@
+<div class="story">
+<h1></h1>
+<div class="path">first/example/calculator.story</div>
+<div class="scenario">
+<h2>Scenario: A scenario where numbers are given</h2>
+<div class="step successful">Given a calculator</div>
+<div class="step successful">When I add <span class="step parameter">5</span> and <span class="step parameter">5</span></div>
+<div class="step successful">Then the outcome should be <span class="step parameter">10</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: A scenario where numbers are a table</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given a calculator</div>
+<div class="step">When I add &lt;number1&gt; an &lt;number2&gt;</div>
+<div class="step">Then the outcome should be &lt;result&gt;</div>
+<table>
+<thead>
+<tr>
+<th>number1</th><th>number2</th><th>result</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td><td>5</td><td>10</td></tr>
+<tr>
+<td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {number1=5, number2=5, result=10}</h3>
+<div class="step successful">Given a calculator</div>
+<div class="step successful">When I add <span class="step parameter">5</span> an <span class="step parameter">5</span></div>
+<div class="step successful">Then the outcome should be <span class="step parameter">10</span></div>
+
+<h3 class="example">Example: {number1=0, number2=0, result=0}</h3>
+<div class="step successful">Given a calculator</div>
+<div class="step successful">When I add <span class="step parameter">0</span> an <span class="step parameter">0</span></div>
+<div class="step successful">Then the outcome should be <span class="step parameter">0</span></div>
+</div>
+</div>
+</div>
